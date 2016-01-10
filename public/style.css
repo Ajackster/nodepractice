@@ -1,0 +1,14 @@
+/* Put your css in here */
+
+html,
+body,
+#map {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+#map {
+    height: 400px;
+    display: block;
+}

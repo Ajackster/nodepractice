@@ -1,0 +1,15 @@
+ <div class= "form-group">
+ <label for="cboType">Reports:</label>
+  <div class= "row">
+    <div class= "col-xs-12">
+      
+      <table class= "table table striped table-hover">
+        <tr data-ng--repeat= "item in reports" data-ng-click= "openForm($index)">
+          <th>{{item.reportType}}</th>
+          <th>{{item.subreportType}}</th>
+          <th>{{item.text}}</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

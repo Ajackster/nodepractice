@@ -1,0 +1,16 @@
+<div class= "form-group">
+  <div>
+    <label for="cboType">Report Type:</label>
+    <input name= "cboType" id= "reType" class= "form-control" data-ng-model= "reports.reportType" readonly>
+  </div>
+  <div>
+    <label for="cboType2">Subreport Type:</label>
+    <input name= "cboType2" id= "subreType" class= "form-control" data-ng-model= "reports.subreportType" readonly>
+  </div>
+  <div>
+    <label for="txtField">Report:</label>
+    <textarea type="textarea" id= "txtField" class= "form-control" data-ng-model= "reports.text" readonly></textarea>
+  </div>
+  <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+  <button class= "btn btn-primary" data-ng-click= "delReport()">Delete Report</button>
+</div>

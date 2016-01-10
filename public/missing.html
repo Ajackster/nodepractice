@@ -1,0 +1,18 @@
+<div class= "form-group">
+  <label for="cboType">Report Type:</label>
+  <select name= "cboType" id= "reType" class= "form-control" >
+    <option>Missing</option>
+  </select>
+  <label for="cboType">Subreport Type:</label>
+  <select name= "cboType" id= "subreType" class= "form-control" ng-model="selectedItem" >
+    <option></option>
+    <option value= "Missing Person">Missing Person</option>
+    <option value= "Missing Vehicle">Missing Vehicle</option>
+    <option value= "Missing Item">Missing Item</option>
+    <option value= "Other">Other</option>
+  </select>
+  <label for="txtField">Report:</label>
+  <textarea type="textarea" id= "txtField" class= "form-control"></textarea>
+  <button class= "btn btn-primary" data-ng-click= "addReport()">Submit</button>
+  <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+</div>
