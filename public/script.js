@@ -172,6 +172,11 @@ app.controller("appController", ["$scope", "$location", "$routeParams", "globalR
   };
 }]);
 
+var form = document.getElementById("agression");
+form.addEventListener("submit", function() {
+	return false;
+});
+
 var map= app.directive('mapCanvas', function() {
     return {
         restrict: 'E',

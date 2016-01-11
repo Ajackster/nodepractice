@@ -1,7 +1,10 @@
 var express = require('express');
 var pg = require('pg');
+var bodyParser = require('body-parser');
 
 var conString = "postgres://ajackster:helloworld@localhost:5432/crowdsafedb";
+var client = new pg.Client(conString);
+client.connect();
 
 var app = express();
 
@@ -10,14 +13,10 @@ var port = app.get('port');
 
 app.use(express.static(__dirname + '/public'));
 
-var client = new pg.Client(conString);
-client.connect();
+app.post('/#/Home/agression', function(req, res){
+res.render('/public/agression.html', {report : req.body.reType, subreport : req.body.subreType, comments : req.body.txtField});
+client.query("INSERT INTO reports(reporttype, subreporttype, comments) values($1, $2, $3)"[report, subreport, comments]);
 
-app.get('/agression', function(req, res) {
-
-var data = {reporttype: req.body.agressionReportType, subreport: req.body.agressionSubreportType, text: req.body.agressionText};
-
-		client.query("INSERT INTO reports(reporttype, subreport, comments) values($1, $2, $3)", [data.reporttype, data.subreport, data.text]);
 });
 
 app.use(function(req, res) {
