@@ -1,0 +1,24 @@
+{
+  "name": "crowdsafe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crowdsafe.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajackster/crowdsafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ajackster/crowdsafe/issues"
+  },
+  "homepage": "https://github.com/Ajackster/crowdsafe#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4"
+  }
+}

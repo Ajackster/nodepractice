@@ -1,3 +1,4 @@
+<html>
 <body>
 <form action="/agression" method="GET">
 <div class= "form-group">
@@ -8,15 +9,16 @@
   <label for="cboType">Subreport Type:</label>
   <select name= "subreType" id= "subreType" class= "form-control" ng-model="selectedItem" >
     <option></option>
-    <option value= "Assult">Assult</option>
-    <option value= "Sexual Harassment/Assult">Sexual Harassment/Assult</option>
+    <option value= "Assult">Assault</option>
+    <option value= "Sexual Harassment/Assult">Sexual Harassment/Assault</option>
     <option value= "On-going Fight">On-going Fight</option>
     <option value= "Other">Other</option>
   </select>
   <label for="txtField">Report:</label>
-  <input type="text" id= "txtField" class= "form-control" name "txtField"></input>
-  <button class= "btn btn-primary" data-ng-click= "addReport()">Submit</button>
-  <button class= "btn btn-primary" data-ng-click= "goHome()">Back</button>
+  <input type="text" id="txtField" class="form-control" name="txtField"></input>
+  <button class="btn btn-primary" data-ng-click="addReport()">Submit</button>
+  <button class="btn btn-primary" data-ng-click="goHome()">Back</button>
 </div>
 </form>
 </body>
+</html>

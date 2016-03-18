@@ -118,7 +118,7 @@ app.controller("appController", ["$scope", "$location", "$routeParams", "globalR
   $scope.openForm= function(index){
     
     globalReport.setLastIndex(index);
-    $location.path("/Home/" + index);
+    $location.path("Home/" + index);
   };
   
   $scope.reports= globalReport.getReports();
